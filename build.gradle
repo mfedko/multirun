@@ -5,16 +5,17 @@ buildscript {
 }
 
 plugins {
-    id "org.jetbrains.intellij" version "0.1.8"
+    id "org.jetbrains.intellij" version "0.1.10"
 }
 
 apply plugin: 'org.jetbrains.intellij'
 
 intellij {
 //    version = 2016.1
-//    version = '2016.2EAP'
+//    version = '2016.3-EAP'
+    version = 'LATEST-EAP-SNAPSHOT'
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.13'
+    gradleVersion = '3.0'
 }
